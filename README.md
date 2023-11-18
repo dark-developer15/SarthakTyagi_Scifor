@@ -1,2 +1,2 @@
 # SarthakTyagi_Scifor
-Training Modules and Learning Done
+Information related to Personal Learning, Training, and presentations done at Scifor
