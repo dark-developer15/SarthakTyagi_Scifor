@@ -1,0 +1,55 @@
+Q1. Difference between a list and a tuple in Python?
+Ans: Some of the points are:-
+• Mutability: Lists are mutable, meaning you can change their contents (add, remove, or modify elements). Tuples are immutable, and once they are created, their elements cannot be changed.
+• Syntax: Lists are defined using square brackets [], while tuples use parentheses ().
+• Performance: Tuples generally have a slight performance advantage over lists due to their immutability.
+• Use Cases: Use lists when you need a collection that can be modified, and tuples when you want a collection that should remain constant throughout the program.
+
+2. How to iterate through a list in Python?
+Ans: You can iterate through a list in Python using a for loop or using list comprehension.
+Example with a for loop:
+	my_list = [1, 2, 3, 4, 5] 
+	for item in my_list:
+		print(item)
+
+3. How to handle exceptions in Python?
+Ans: Exceptions in Python are handled using try, except blocks. The code that might raise an exception is placed inside the try block, and the code to handle the exception is written in the except block.
+Example:
+	try:
+		result = 10 / 0
+	except ZeroDivisionError:
+		print("Cannot divide by zero!") 
+
+4. What are list comprehensions in Python?
+Ans: List comprehensions provide a concise way to create lists in Python. They consist of an expression followed by a for loop inside square brackets.
+Example:	squares = [x**2 for x in range(1, 6)] # Result: [1, 4, 9, 16, 25]
+
+5. What is the purpose of the if __name__ == "__main__" statement?
+Ans: This statement is used to check whether the Python script is being run as the main program or if it is being imported as a module into another script. The code inside the if __name__ == "__main__": block will only run if the script is the main program.
+
+6. Purpose of the with statement in Python?
+Ans: The with statement is used to simplify resource management, such as file handling or network connections. It ensures that the resources are properly acquired and released. It also provides better exception handling.
+
+7. What are the Key features of Spark?
+Ans:
+• Speed: Spark is faster than traditional data processing tools due to in-memory computation.
+• Ease of Use: Spark provides high-level APIs in Java, Scala, Python, and R.
+• Generality: Spark is designed for various workloads, including batch processing, iterative algorithms, interactive queries, and streaming.
+• Flexibility: Spark can be used for various data processing tasks, including ETL, machine learning, graph processing, and more.
+
+8. What are Resilient Distributed Datasets (RDDs) in Spark?
+Ans: RDDs are the fundamental data structure in Spark, representing an immutable distributed collection of objects that can be processed in parallel. RDDs can be cached in memory across the nodes in a cluster, allowing for efficient parallel processing.
+
+9. Difference between a Data Frame and an RDD in Spark?
+Ans:
+• Abstraction: RDD is a low-level abstraction representing a distributed collection of data. Data Frame is a higher-level abstraction built on top of RDD, providing a more user-friendly interface.
+• Optimization: Data Frames offer optimization techniques like Catalyst and Tungsten, making them more efficient for certain operations compared to RDDs.
+
+10. What is Spark's ecosystem?
+Ans:
+• Spark SQL: Allows querying structured data using SQL.
+• Spark Streaming: Enables processing live streams of data.
+• MLlib: Provides machine learning algorithms and tools.
+• GraphX: Graph processing library for analyzing graph-structured data.
+• SparkR: R package for Spark, enabling R users to leverage Spark's capabilities.
+
