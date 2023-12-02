@@ -1,0 +1,43 @@
+Q1. Explain how to deploy a streamlit app
+Ans. In general,  there are two ways to deploy an application, same goes with streamlit
+	1. We can use Streamlit Cloud, Steps:
+		a.) Adding the app to a Repository (like Github)
+		b.) Create/Login to your account in Streamlit Cloud
+		c.) Select 'New Deployment'
+		d.) Add link to Github Repository, branch(We can add branch we want), Starting File(Which file should be the index page of our app), and Custom domain (to create a good DNS link)
+		e.) Click Deploy, and We are > ONLINE <
+	we can also add custom settings like Python version, Environment variables and for custom changes TOML file( I don't know frankly what is this file, but i will study it.. )
+		
+	2. We can use any Other platform to deploy the application, for example:- I tried Heroku and here are steps:
+		a.) Login into Heroku cloud service -> download Heroku CLI
+		b.) Create a new app -> Push the app and we are good to go
+	--> I haven't added Payment details in the cloud so i don't exactly know the steps, But i have seen my friend doing this and it may be applicable for streamlit too..
+
+
+Q2. Explain st.cache in streamlit?
+Ans. We used this function to save the output for expensive tasks(tasks required more time) so that when they are called with similar output, cache directly send the answer as it is already computed. We can use st function like this:
+
+@st.cache
+def cache_func(input):
+    # time-consuming computation
+    # result
+    return result
+if we call cache_func two times for same input, and it takes 5sec. to generate an output, for the second time the result will be fetched from cache
+
+Q3. How can you handle user input in streamlit?
+Ans. There are various ways:
+	st.text_input() - To take Textual input from the user
+	st.number_input() - To take numerical input from the user
+	st.text_area() - To take large input (like for multiple lines)
+	st.date_input() - to choose date and take it as input
+	st.time_input() - no used but takes time input
+
+
+Q4. Describe the role of st.sidebar?
+Ans. The st.sidebar is used to create a sidebar in app, providing a space for additional controls, settings, or information that is separated from the main content. For Eg:-
+	user_input = st.sidebar.slider("Select a value", 0, 100, 50)
+We can use sidebar slider function to display a slider in the sidebar
+
+Q5. Purpose of St.pyplot? How can you use it to display plots?
+Ans. It is a function that allows us to display Matplotlib plots in the Streamlit app. It provides a simple way to integrate Matplotlib plots, making it easy to visualize and share data.
+I didn't use the function so I don't know how it is used.
